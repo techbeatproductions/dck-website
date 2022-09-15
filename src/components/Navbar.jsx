@@ -8,32 +8,32 @@ import { AiOutlineMenu } from 'react-icons/ai';
 import { RiCloseLine } from 'react-icons/ri';
 
 const Menu = () => (
-  <div className='lg:flex lg:flex-row lg:items-center'>
-     <ul className=" text-xs  space-y-3 lg:flex lg:flex-row lg:space-x-12   lg:space-y-0.5">
+  <div className='lg:flex lg:flex-row lg:items-center lg:scale-100'>
+     <ul className=" text-xs  space-y-3 lg:flex lg:flex-row lg:space-x-12   lg:space-y-0.5 lg:mx-6 xl:-mx-44">
        <div className='flex flex-row items-center space-x-1 '>
          <AiFillHome className='fill-current text-primary2 lg:text-accent'/>
 
-          <li><Link to="/" className="text-primary2 hover:text-primary2 lg:text-accent"><p className='font-sans text-xs font-regular '>Home</p></Link></li>
+          <li><Link to="/" className="text-primary2 hover:text-primary2 lg:text-accent lg:hover:text-accent"><p className='font-sans text-xs font-regular '>Home</p></Link></li>
        </div>
 
        <div className='flex flex-row items-center space-x-1'>
         <GiClick className='fill-current text-primary2 lg:text-accent'/>
-          <li><Link to="/about" className="text-primary2 hover:text-primary2 lg:text-accent"><p className='font-sans text-xs font-regular '>About</p></Link></li>
+          <li><Link to="/about" className="text-primary2 hover:text-primary2 lg:text-accent lg:hover:text-accent"><p className='font-sans text-xs font-regular '>About</p></Link></li>
        </div>
 
        <div className='flex flex-row  items-center space-x-1'>
         <FaChurch className='fill-current text-primary2 lg:text-accent' />
-          <li><Link to="/ministries" className="text-primary2 hover:text-primary2 lg:text-accent"><p className='font-sans text-xs font-regular '>Ministries</p></Link></li>
+          <li><Link to="/ministries" className="text-primary2 hover:text-primary2 lg:text-accent lg:hover:text-accent"><p className='font-sans text-xs font-regular '>Ministries</p></Link></li>
        </div>
 
        <div className='flex flex-row items-center space-x-1'>
         <FaBible className='fill-current text-primary2 lg:text-accent' />
-          <li><Link to="/preachings" className="text-primary2  hover:text-primary2 lg:text-accent"><p className='font-sans text-xs font-regular '>Preachings</p></Link></li>
+          <li><Link to="/preachings" className="text-primary2  hover:text-primary2 lg:text-accent lg:hover:text-accent"><p className='font-sans text-xs font-regular '>Preachings</p></Link></li>
        </div>        
 
        <div className='flex flex-row items-center space-x-1'>
         <FaDonate className='fill-current text-primary2 lg:text-accent' />
-            <li><Link to="/give" className="text-primary2 hover:text-primary2 lg:text-accent"><p className='font-sans text-xs font-regular '>Give</p></Link></li>
+            <li><Link to="/give" className="text-primary2 hover:text-primary2 lg:text-accent lg:hover:text-accent"><p className='font-sans text-xs font-regular '>Give</p></Link></li>
        </div>
 
   </ul>
@@ -77,7 +77,7 @@ function Navbar() {
                }
           
                {toggleMenu && (
-                 <div className='absolute right-2 top-16'>
+                 <div className='absolute right-2 top-16 sm:top-20 sm:right-4'>
                   <div className=' text-primary2 scale-up-center '>
                   <Menu/>
 
