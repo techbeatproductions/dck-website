@@ -7,6 +7,7 @@ module.exports = {
       sans: "Lato",
       cursive: "Stalemate",
     },
+
     extend: {
       colors: {
         primary1: "#EDBFB7",
@@ -14,6 +15,10 @@ module.exports = {
         secondary: "#0F7173",
         accent: "#ADF6B1",
       },
+      gradientColorStops: (theme) => ({
+        gradientColor1: "#2F0743",
+        gradientColor2: "#000000FC",
+      }),
     },
   },
   variants: {
